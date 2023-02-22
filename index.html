@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Don't save number</title>
+    <link
+      rel="shortcut icon"
+      href="https://cdn-icons-png.flaticon.com/512/174/174879.png"
+      type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- <img id="bg" src="./assets/BG.png" alt="backgound image" /> -->
+      <aside>
+        <p>
+          Com essa página você pode mandar mensagem pra alguem sem precisar
+          salvar seu numero, Não se preocupe essa pagina não coleta dados,
+          utilizamos a API publica do whatsapp para inviar as mensagens.
+        </p>
+      </aside>
+      <img id="shape" src="./assets/organicShape.svg" alt="shape lateral" />
+      <div class="form">
+        <form id="form" action="">
+          <h1>Envie Sua Mensagem</h1>
+          <label for="number">Digite o numero:</label>
+          <input
+            type="text"
+            name="number"
+            id="number"
+            required
+            placeholder="(ddd)999999999" />
+
+          <label for="messenger">Digite sua mensagem</label>
+          <textarea
+            name="messenger"
+            id="messenger"
+            cols="30"
+            rows="10"
+            placeholder="Digite sua mensagem"></textarea>
+
+          <button id="button" type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
