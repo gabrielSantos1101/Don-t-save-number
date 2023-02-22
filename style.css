@@ -14,7 +14,7 @@ body {
   line-height: 3.6rem;
   color: #f1f1f1;
 
-  width: 100vw;
+  width: 117vw;
   height: 100vh;
   overflow: hidden;
 
@@ -31,21 +31,22 @@ body {
 aside {
   height: 100%;
   width: 50%;
-  /* background-image: url(./assets/BG.png); */
+  display: flex;
   background-size: 40%;
   position: relative;
   z-index: -1;
-
-  padding: 10rem;
+  justify-content: center;
+  text-align: left;
 }
 
 aside p {
   max-width: 70%;
   font-weight: 500;
-  font-size: 24px;
-  line-height: 36px;
+  font-size: 2.4rem;
   text-align: justify;
+  line-height: 3.6rem;
   color: #151515;
+  margin-top: min(20%, 30rem);
 }
 
 #bg {
@@ -62,7 +63,7 @@ aside p {
   position: absolute;
   top: 0;
   bottom: 0;
-  right: 0;
+  right: min(0%, -16rem);
   z-index: -1;
 }
 
@@ -71,6 +72,9 @@ aside p {
   justify-content: center;
   width: 50%;
   padding: 4rem;
+  margin-right: min(10%, 20rem);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 form {
@@ -127,4 +131,43 @@ form button {
   border-radius: 999999px;
   border: none;
   cursor: pointer;
+}
+
+/* Reponsive */
+
+@media (min-width: 1000px) {
+  #shape {
+    right: min(-10%, -42rem);
+  }
+
+  .form {
+    scale: 0.8;
+    margin-right: min(15%, 16rem);
+  }
+}
+
+@media (min-width: 1200px) {
+  #shape {
+    right: min(-10%, -27rem);
+  }
+
+  .form {
+    scale: 1;
+  }
+}
+
+@media (min-width: 1400px) {
+  #shape {
+    right: min(-10%, -16rem);
+  }
+}
+
+@media (min-width: 1700px) {
+  #shape {
+    right: min(-0%, -5rem);
+  }
+
+  .form {
+    margin-right: min(15%, 25rem);
+  }
 }
