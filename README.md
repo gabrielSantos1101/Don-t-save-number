@@ -25,6 +25,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## <img src="https://cdn-icons-png.flaticon.com/512/4257/4257674.png" width='3%'></img> Projeto
 
-Esse projeto é uma calculadora de IMC feita utilizando javaScript puro para realisar os calculos
+Utiliza a api publica do whatsapp para enviar mensagem sem precisar salvar o nenhum numero
 
  <h3 align="center"> Developed by <a href="https://www.linkedin.com/in/gabriel-santos-bb4a10188/">Gabriel Santos</a> ☕</h3>
