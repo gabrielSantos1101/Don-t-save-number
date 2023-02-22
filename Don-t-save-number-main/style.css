@@ -1,0 +1,154 @@
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-style: normal;
+  line-height: 3.6rem;
+  color: #f1f1f1;
+
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
+  background-image: url(./assets/BG.png);
+  background-repeat: repeat;
+}
+
+.wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+
+}
+
+aside {
+  height: 100%;
+  width: 50%;
+  /* background-image: url(./assets/BG.png); */
+  display: flex;
+  background-size: 40%;
+  position: relative;
+  z-index: -1;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+ 
+}
+
+aside p {
+  max-width: 70%;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #151515;
+}
+
+#bg {
+  position: absolute;
+  z-index: -1;
+  width: 58%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.1;
+}
+
+#shape {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  width: 50vw;
+  padding: 4rem;
+  background-image: url(assets/organicShape.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  max-width: 50rem;
+}
+
+h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 7.1rem;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  margin-bottom: 5.6rem;
+}
+
+label {
+  font-size: 1.8rem;
+  line-height: 2.9rem;
+  margin-bottom: 0.8rem;
+  margin-left: 3rem;
+}
+
+:where(input, textarea) {
+  padding-block: 1.3rem;
+  padding-inline: 2rem;
+  border: none;
+  border-radius: 30px;
+  background: #f1f1f1;
+  margin-bottom: 4.3rem;
+}
+
+textarea {
+  padding: 2rem;
+}
+
+form input:nth-child(5) {
+  height: min(20rem, 35rem);
+}
+
+form button {
+  padding: 0.4rem;
+  font-weight: 800;
+  font-size: 2.2rem;
+  line-height: 4.8rem;
+  color: #01a884;
+
+  border-radius: 999999px;
+  border: none;
+  cursor: pointer;
+}
+
+
+/* Reponsive */
+
+
+@media (max-width:860px) {
+  .form {
+    width: 80vw;
+  }
+}
+
+@media (max-width:730px) {
+  main {
+    display: flex;
+    flex-direction: column ;
+    
+  }
+}
