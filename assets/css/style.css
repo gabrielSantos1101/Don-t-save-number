@@ -103,6 +103,10 @@ label {
   margin-left: 3rem;
 }
 
+::placeholder {
+  opacity: 0.4;
+}
+
 :where(input, textarea) {
   padding-block: 1.3rem;
   padding-inline: 2rem;
@@ -182,6 +186,7 @@ form button {
 
   ::placeholder {
     color: white;
+    opacity: 0.7;
   }
 
   form button {
@@ -245,6 +250,7 @@ form button {
 
   :where(input, textarea, button) {
     background: #f1f1f1;
+    color: black;
   }
 
   label {
@@ -253,6 +259,7 @@ form button {
 
   ::placeholder {
     color: black;
+    opacity: 0.4;
   }
 
   form {
