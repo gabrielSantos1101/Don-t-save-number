@@ -71,7 +71,6 @@ aside p {
   display: flex;
   justify-content: center;
   width: 50%;
-  padding: 4rem;
   margin-right: min(10%, 20rem);
   background-repeat: no-repeat;
   background-size: cover;
@@ -142,7 +141,7 @@ form button {
 
   .form {
     scale: 0.8;
-    margin-right: min(15%, 16rem);
+    margin-right: min(15%, 20rem);
   }
 }
 
