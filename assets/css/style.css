@@ -141,6 +141,7 @@ form button {
 @media (min-width: 360px) {
   body {
     width: 100vw;
+    overflow-y: visible;
   }
 
   .wrapper {
@@ -227,7 +228,7 @@ form button {
 @media (min-width: 1000px) {
   body {
     width: 117vw;
-    overflow-y: scroll;
+    overflow-y: hidden;
   }
 
   .wrapper {
