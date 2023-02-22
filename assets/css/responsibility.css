@@ -1,0 +1,172 @@
+@media (min-width: 360px) {
+  body {
+    width: 100vw;
+  }
+
+  .wrapper {
+    flex-direction: column-reverse;
+    padding: 3.5rem;
+  }
+
+  #shape {
+    display: none;
+  }
+
+  aside {
+    width: 100%;
+  }
+
+  aside p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    margin-bottom: 0;
+  }
+
+  h1 {
+    font-size: 2rem;
+    color: #01a884;
+    margin-bottom: 0;
+    margin-top: 4rem;
+  }
+
+  .form {
+    width: 100%;
+    margin-inline: auto;
+  }
+
+  label {
+    color: black;
+    font-size: 1.2rem;
+  }
+
+  :where(input, textarea, button) {
+    background: #01a884;
+    color: white;
+  }
+
+  ::placeholder {
+    color: white;
+  }
+
+  form button {
+    color: white;
+    font-size: 1.4rem;
+    padding-block: 0.8rem;
+  }
+}
+
+@media (min-width: 370px) {
+  h1 {
+    font-size: 2.3rem;
+  }
+}
+
+@media (min-width: 400px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 700px) {
+  h1 {
+    font-size: 4rem;
+    margin-bottom: 4rem;
+  }
+
+  aside p {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
+  form {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1000px) {
+  body {
+    width: 117vw;
+    overflow-y: scroll;
+  }
+
+  .wrapper {
+    flex-direction: row;
+  }
+
+  h1 {
+    font-size: 3rem;
+    color: #f1f1f1;
+  }
+
+  aside p {
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+  }
+
+  #shape {
+    display: block;
+  }
+
+  :where(input, textarea, button) {
+    background: #f1f1f1;
+  }
+
+  label {
+    color: #f1f1f1;
+  }
+
+  ::placeholder {
+    color: black;
+  }
+
+  form {
+    max-width: 50rem;
+  }
+
+  form button {
+    color: #01a884;
+    font-size: 2.2rem;
+    padding-block: 1.4rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  body {
+    overflow-y: hidden;
+  }
+
+  #shape {
+    right: min(-10%, -42rem);
+  }
+
+  .form {
+    scale: 0.8;
+    margin-right: min(15%, 20rem);
+  }
+}
+
+@media (min-width: 1200px) {
+  #shape {
+    right: min(-10%, -27rem);
+  }
+
+  .form {
+    scale: 1;
+  }
+}
+
+@media (min-width: 1400px) {
+  #shape {
+    right: min(-10%, -16rem);
+  }
+}
+
+@media (min-width: 1700px) {
+  #shape {
+    right: min(-0%, -5rem);
+  }
+
+  .form {
+    margin-right: min(15%, 25rem);
+  }
+}
