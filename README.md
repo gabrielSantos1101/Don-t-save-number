@@ -7,7 +7,7 @@
 <br>
 
 <p align="center">
-  <a href="no-save-number.vercel.app/" target = "_blank">
+  <a href="https://no-save-number.vercel.app/" target = "_blank">
   <img alt="desktop preview" src=".github/Desktop-preview.png" width="100%">
   </a>
 </p>
