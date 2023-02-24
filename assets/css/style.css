@@ -16,10 +16,8 @@ body {
 
   width: 117vw;
   height: 100vh;
-  overflow-y: hidden;
-  overflow-x: hidden;
 
-  background-image: url(/assets/BG.png);
+  background-image: url(/assets/Pattern\ backgound\ light.png);
   background-repeat: repeat;
 }
 
@@ -27,6 +25,8 @@ body {
   display: flex;
   width: 100%;
   height: 100%;
+
+  overflow-x: hidden;
 }
 
 aside {
@@ -164,7 +164,7 @@ form button {
   }
 
   h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: #01a884;
     margin-bottom: 0;
     margin-top: 4rem;
@@ -232,6 +232,7 @@ form button {
 
   .wrapper {
     flex-direction: row;
+    overflow-y: hidden;
   }
 
   h1 {
@@ -308,4 +309,26 @@ form button {
   .form {
     margin-right: min(15%, 25rem);
   }
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #01a884 #e3e3e3;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #e3e3e3;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #01a884;
+  border-radius: 50px;
+  border: 0px groove #ffffff;
 }
