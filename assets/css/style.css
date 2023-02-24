@@ -2,10 +2,28 @@
   font-size: 62.5%;
 }
 
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #e3e3e3;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #01a884;
+  border-radius: 50px;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scrollbar-width: auto;
+  scrollbar-color: #01a884 #e3e3e3;
 }
 
 body {
@@ -16,6 +34,7 @@ body {
 
   width: 117vw;
   height: 100vh;
+  overflow-x: hidden;
 
   background-image: url(/assets/Pattern\ backgound\ light.png);
   background-repeat: repeat;
@@ -232,7 +251,6 @@ form button {
 
   .wrapper {
     flex-direction: row;
-    overflow-y: hidden;
   }
 
   h1 {
@@ -279,9 +297,22 @@ form button {
     right: min(-10%, -42rem);
   }
 
+  .wrapper {
+    overflow-y: hidden;
+  }
+
   .form {
     scale: 0.8;
     margin-right: min(15%, 20rem);
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #019273;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #f1f1f1;
+    border-radius: 50px;
   }
 }
 
@@ -309,26 +340,4 @@ form button {
   .form {
     margin-right: min(15%, 25rem);
   }
-}
-
-/* ===== Scrollbar CSS ===== */
-/* Firefox */
-* {
-  scrollbar-width: auto;
-  scrollbar-color: #01a884 #e3e3e3;
-}
-
-/* Chrome, Edge, and Safari */
-*::-webkit-scrollbar {
-  width: 10px;
-}
-
-*::-webkit-scrollbar-track {
-  background: #e3e3e3;
-}
-
-*::-webkit-scrollbar-thumb {
-  background-color: #01a884;
-  border-radius: 50px;
-  border: 0px groove #ffffff;
 }
