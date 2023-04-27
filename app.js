@@ -1,8 +1,9 @@
+import { masks } from './mask.js'
+
 let form = document.getElementById('form')
 let number = document.getElementById('number')
 let messenger = document.getElementById('messenger')
-let link = document.getElementById('link')
-const button = document.getElementById('button')
+
 
 form.addEventListener('submit', event => {
   event.preventDefault()
@@ -13,3 +14,5 @@ form.addEventListener('submit', event => {
 
   window.location.href = url
 })
+
+
