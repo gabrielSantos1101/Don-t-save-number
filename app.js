@@ -1,18 +1,21 @@
+console.log('teste')
 import { masks } from './mask.js'
 
 let form = document.getElementById('form')
 let number = document.getElementById('number')
 let messenger = document.getElementById('messenger')
+const button = document.getElementById('button')
 
-
-form.addEventListener('submit', event => {
-  event.preventDefault()
-  let phone = number.value.trim()
+button.addEventListener('click', e => {
+  let phone = number.value
+    .trim()
+    .replaceAll(' ', '')
+    .replace(/[\])}[{(-]/g, '')
   let messenge = messenger.value.replaceAll(' ', '%20')
 
   let url = `https://api.whatsapp.com/send?phone=55${phone}&text=${messenge}.`
+  console.log(url)
 
-  window.location.href = url
+  button.href = url
+  console.log(document.querySelector('#button'))
 })
-
-
