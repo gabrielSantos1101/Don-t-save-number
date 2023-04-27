@@ -117,7 +117,8 @@ h1 {
 }
 
 label {
-  font-size: 1.8rem;
+  font-size: 1.9rem;
+  font-weight: bold;
   line-height: 2.9rem;
   margin-bottom: 0.8rem;
   margin-left: 3rem;
@@ -197,6 +198,8 @@ form button {
   label {
     color: black;
     font-size: 1.2rem;
+    
+    
   }
 
   :where(input, textarea, button) {
@@ -217,9 +220,31 @@ form button {
 }
 
 @media (min-width: 370px) {
+  body {
+    padding-right: 7rem;
+  }
+
   h1 {
     font-size: 2.3rem;
+    line-height: 3.5rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
   }
+
+  aside p { 
+    margin-top: 2rem;
+  }
+
+  textarea {
+    margin-bottom: 2rem;
+    height: min(12rem, 35rem);
+  }
+
+  input {
+    margin-bottom: 2rem;
+  }
+
+
 }
 
 @media (min-width: 400px) {
