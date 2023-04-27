@@ -1,4 +1,4 @@
-<h1 align="center"> Calculadora de IMC </h1>
+<h1 align="center"> Don't save number </h1>
 
 <p align="center">
   <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=49AA26&labelColor=000000">
